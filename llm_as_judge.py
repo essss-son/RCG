@@ -44,8 +44,8 @@ nontoxic_prompt = f"""
 """
 
 client = OpenAI(
-    base_url='https://api-inference.modelscope.cn/v1',
-    api_key='ms-72b29403-57e0-4afc-891d-627362e43079', # ModelScope Token
+    base_url='',
+    api_key='########', # ModelScope Token
 )
 
 # set extra_body for thinking control
