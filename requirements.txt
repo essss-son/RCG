@@ -1,0 +1,9 @@
+torch>=2.0
+transformers>=4.35
+peft>=0.7
+numpy
+tqdm
+tensorboard
+openai>=1.0
+accelerate
+safetensors
