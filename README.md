@@ -226,7 +226,7 @@ This reports attribute accuracy (or toxicity), perplexity, and Dist-1/2/3. See `
 
 The RL objective uses a composite token-level reward:
 
-$$\text{reward} = \tanh\big(\lambda_a \cdot \text{attr}\big) + \lambda_b \cdot \log p_{\text{ref}}(y_t \mid y_{<t}) - \lambda_r \cdot \text{rep} + \text{noise}$$
+$$\text{reward} = \tanh\big(\lambda_a \cdot \text{attr}\big) + \lambda_b \cdot \log p_{\text{ref}}(y_t \mid y_{\lt t}) - \lambda_r \cdot \text{rep} + \text{noise}$$
 
 - **Attribute reward** — the score of the full prefix under the task's reward model; higher when the generated text matches the target attribute.
 - **Reference-model guidance** — the log-probability of the sampled token under a frozen GPT-2; it keeps the policy close to the base distribution and prevents grammatical errors.
